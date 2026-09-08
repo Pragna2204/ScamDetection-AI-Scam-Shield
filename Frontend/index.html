@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ Phishing Detector</h1>
+
+        <p>Check whether a URL or message is suspicious.</p>
+
+        <textarea
+            id="inputText"
+            placeholder="Enter a URL or suspicious message...">
+        </textarea>
+
+        <button onclick="scanInput()">Scan</button>
+
+        <div id="result" class="result">
+
+            <h2>Detection Result</h2>
+
+            <h3 id="status">Waiting for scan...</h3>
+
+            <p id="score"></p>
+
+            <div id="reasons"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
